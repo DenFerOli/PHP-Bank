@@ -62,6 +62,13 @@ main .main-menu-container .option-container:hover {
     transition: 300ms;
 }
 
+main .main-menu-container .main-menu-box a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* SCREEN CONTAINER */
+
 main .main-menu-container .screen-container {
     display: flex;
     align-items: center;
