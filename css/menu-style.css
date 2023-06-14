@@ -12,6 +12,7 @@ main .main-screen-container {
 main .main-screen-container h2 {
     width: 100%;
     font-size: 20px;
+    font-weight: bold;
 }
 
 main .main-screen-container .user-personal-info {
@@ -21,6 +22,30 @@ main .main-screen-container .user-personal-info {
     height: 10%;
     width: 100%;
 }
+
+main .main-screen-container .user-personal-info label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 30%;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(50, 59, 95);
+    color: #fff;
+}
+
+main .main-screen-container .user-personal-info label:nth-child(1) {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main .main-screen-container .user-personal-info label:nth-child(2) {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/* MAIN MENU CONTAINER */
 
 main .main-menu-container {
     display: flex;
@@ -246,7 +271,7 @@ main .main-menu-container .screen-container .deposit-container label:nth-child(3
 /* WITHDRAW CONTAINER */
 
 main .main-menu-container .screen-container .withdraw-container {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -263,7 +288,6 @@ main .main-menu-container .screen-container .withdraw-container label:nth-child(
     width: 40%;
     font-size: 30px;
 }
-
 
 main .main-menu-container .screen-container .withdraw-container .withdraw-options {
     display: flex;
@@ -283,10 +307,14 @@ main .main-menu-container .screen-container .withdraw-container .withdraw-option
     background-color: rgb(120, 142, 230);
     border-radius: 10px;
     font-weight: bold;
+    border-style: none;
+    box-shadow: 0 0 1px #000;
 }
 
 main .main-menu-container .screen-container .withdraw-container .withdraw-options button:hover {
     background-color: rgb(93, 111, 180);
+    box-shadow: 0 0 3px #ffffff;
+    transition: 300ms;
     cursor: pointer;
 }
 
