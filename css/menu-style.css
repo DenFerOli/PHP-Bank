@@ -63,12 +63,17 @@ main .main-menu-container .option-container:hover {
 }
 
 main .main-menu-container .screen-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 90%;
     width: 50%;
     border-radius: 10px;
     border: 20px solid #8d8d8d;
     background-color: rgb(50, 59, 95);
 }
+
+/* NUMBERS CONTAINER */
 
 main .main-menu-container .option-container .number-container {
     display: flex;
@@ -181,4 +186,110 @@ main .main-screen-container .numbers-main-container .numbers-menu button:nth-chi
 
 main .main-screen-container .numbers-main-container .numbers-menu button:nth-child(4):hover {
     box-shadow: 0 0 0 #5c5c5c;
+}
+
+
+/* BALANCE CONTAINER */
+
+main .main-menu-container .screen-container .balance-container {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+main .main-menu-container .screen-container .balance-container h2 {
+    color: #fff;
+    text-align: center;
+}
+
+/* DEPOSIT CONTAINER */
+
+main .main-menu-container .screen-container .deposit-container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 50%;
+    width: 100%;
+    color: #fff;
+}
+
+main .main-menu-container .screen-container .deposit-container h2 {
+    text-align: center;
+}
+
+main .main-menu-container .screen-container .deposit-container label:nth-child(2) {
+    width: 40%;
+    font-size: 30px;
+}
+
+main .main-menu-container .screen-container .deposit-container label:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 50%;
+    background-color: green;
+    border-radius: 10px;
+}
+
+/* WITHDRAW CONTAINER */
+
+main .main-menu-container .screen-container .withdraw-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 80%;
+    width: 80%;
+    color: #fff;
+}
+
+main .main-menu-container .screen-container .withdraw-container h2 {
+    text-align: center;
+}
+
+main .main-menu-container .screen-container .withdraw-container label:nth-child(2) {
+    width: 40%;
+    font-size: 30px;
+}
+
+
+main .main-menu-container .screen-container .withdraw-container .withdraw-options {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    height: 50%;
+    width: 50%;
+    background-color:#191e31;
+    box-shadow: 0 0 3px #fff;
+    border-radius: 10px;
+}
+
+main .main-menu-container .screen-container .withdraw-container .withdraw-options button {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(120, 142, 230);
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+main .main-menu-container .screen-container .withdraw-container .withdraw-options button:hover {
+    background-color: rgb(93, 111, 180);
+    cursor: pointer;
+}
+
+main .main-menu-container .screen-container .withdraw-container label:nth-child(4) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 50%;
+    background-color: red;
+    border-radius: 10px;
 }
