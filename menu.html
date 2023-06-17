@@ -20,7 +20,7 @@
         <div class="main-screen-container">
             <h2>Olá bem vindo ao PHP Bank</h2>
                 <div class="user-personal-info">
-                    <label for="">CLIENTE: Fulano</label>
+                    <label for="">CLIENTE: <?php echo $user ?></label>
                     <label for="">CONTA: 19191919 &nbsp;&nbsp; AGÊNCIA: 19191919</label>
                 </div>
             <div class="main-menu-container">
@@ -99,5 +99,12 @@
         <label for="">PHP BANK Developed by&nbsp;</label>
         <a href="https://denferoli.github.io/DenisFernandoQATester/">Denis Fernando</a>
     </footer>
+    <?php
+    
+    $user = $_GET['user']
+    
+    
+    
+    ?>
 </body>
 </html>
