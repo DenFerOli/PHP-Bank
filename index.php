@@ -33,5 +33,20 @@
         <label for="">PHP BANK Developed by&nbsp;</label>
         <a href="https://denferoli.github.io/DenisFernandoQATester/">Denis Fernando</a>
     </footer>
+    <?php
+
+    if($_SERVER["REQUEST_METHOD"] == "POST") {
+
+        $password = $_POST["password"];
+        $user = $_POST["login"];
+
+        if ($password == 123) {
+            header("Location: menu.index");
+        } else {
+            echo $user . "sua Senha incorreta.";
+        };
+    };
+
+?>
 </body>
 </html>
