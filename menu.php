@@ -18,14 +18,27 @@
     </header>
     <main>
         <div class="main-screen-container">
-            <h2>Olá fulano bem vindo ao PHP Bank</h2>
+            <h2>Olá bem vindo ao PHP Bank</h2>
                 <div class="user-personal-info">
-                    <label for="">CLIENTE: Fulano</label>
-                    <label for="">CONTA: 19191919 &nbsp;&nbsp; AGÊNCIA: 19191919</label>
+                    <?php 
+                    include 'acessar.php';
+                    $user2 = "Denis Fernando";
+
+                    echo '<label for="">CLIENTE: ' . $user2 . '</label>';
+                    echo '<label for="">CONTA: 19191919 &nbsp;&nbsp; AGÊNCIA: 19191919</label>';
+                    
+                    ?>
+                    <!-- <label for="">CLIENTE: Fulano</label>
+                    <label for="">CONTA: 19191919 &nbsp;&nbsp; AGÊNCIA: 19191919</label> -->
                 </div>
             <div class="main-menu-container">
                 <div class="main-menu-box">
                     <h2>MENU PRINCIPAL</h2>
+                    <?php
+                        for ($i = 1; $i <= 4; $i++) {
+                            echo '<label for="" class="number-container">' . $i . '</label>';
+                        }
+                    ?>
                     <div class="option-container">
                         <label for="" class="number-container">1</label>
                         <label for="" class="option-boxes">SALDO</label>
